@@ -1,23 +1,20 @@
-import { View, Text } from "react-native";
-import { fontFamily } from "@/styles/font-family";
+import { View } from "react-native";
+
+/* Components */
+import { Welcome } from "@/components/Welcome";
+import { StepList } from "@/components/StepList";
 
 export default function Index() {
   return (
     <View
       style={{
         flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
+        padding: 40,
+        gap: 40,
       }}
     >
-      <Text
-        style={{
-          fontFamily: fontFamily.bold,
-          fontSize: 22,
-        }}
-      >
-        Hello Nearby Project
-      </Text>
+      <Welcome />
+      <StepList />
     </View>
   );
 }
