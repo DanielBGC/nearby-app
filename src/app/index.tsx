@@ -1,4 +1,5 @@
 import { View, Text } from "react-native";
+import { fontFamily } from "@/styles/font-family";
 
 export default function Index() {
   return (
@@ -9,7 +10,12 @@ export default function Index() {
         alignItems: "center",
       }}
     >
-      <Text style={{ fontSize: 22, fontWeight: "bold" }}>
+      <Text
+        style={{
+          fontFamily: fontFamily.bold,
+          fontSize: 22,
+        }}
+      >
         Hello Nearby Project
       </Text>
     </View>
